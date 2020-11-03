@@ -1,0 +1,72 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true,
+    "mocha": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "no-console": 2,
+    "no-with": 2,
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-mixed-spaces-and-tabs": 2,
+    "one-var": [
+      2,
+      {
+        "uninitialized": "always",
+        "initialized": "never"
+      }
+    ],
+    "quote-props": [2, "as-needed"],
+    "key-spacing": [
+      2,
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "space-unary-ops": [
+      2,
+      {
+        "nonwords": false,
+        "overrides": {}
+      }
+    ],
+    "space-before-function-paren": [2, "never"],
+    "space-in-parens": [2, "never"],
+    "no-trailing-spaces": 2,
+    "max-len": [2, 160],
+    "camelcase": 0,
+    "curly": [2, "all"],
+    "keyword-spacing": [2, {}],
+    "spaced-comment": [2, "always"],
+    "space-infix-ops": 2,
+    "space-before-blocks": [2, "always"],
+    "comma-dangle": 0,
+    "no-else-return": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [2, "unix"],
+    "quotes": [2, "single"]
+  }
+}
