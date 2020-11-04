@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "./dist/carpark-tsc.js",
+    "sourceMap": true
+  },
+  "include": ["ts-lib/**/*"],
+  "exclude": ["node_modules", "test/**/*.ts"]
+}

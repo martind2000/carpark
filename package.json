@@ -7,7 +7,8 @@
     "test:js": "mocha test/**/*.js",
     "test:ts": "mocha -r ts-node/register test/**/*.ts",
     "lint": "eslint . --ext .ts",
-    "coverage": "nyc npm run test:js"
+    "coverage": "nyc npm run test:js",
+    "build:js": "rollup -c rollup.config.js"
   },
   "keywords": [],
   "author": "Martin Donnelly",
@@ -23,6 +24,7 @@
     "expect.js": "^0.3.1",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
+    "rollup": "^2.33.1",
     "ts-node": "^9.0.0",
     "typings": "^2.1.1"
   },
