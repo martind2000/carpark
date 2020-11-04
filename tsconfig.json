@@ -4,7 +4,6 @@
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "./dist/carpark-tsc.js",
     "sourceMap": true
   },
   "include": ["ts-lib/**/*"],
