@@ -1,8 +1,8 @@
 import { parse } from 'fecha';
 
 class Carpark {
-  private _startDT: Date;
-  private _endDT: Date;
+  private _startDT: Date = new Date(0);
+  private _endDT: Date = new Date(0);
   private _dayLength: number = 60 * 60 * 24;
   private _hourLength: number = 60 * 60;
   private _validDays: number[] = [1, 2, 3, 4, 5]; // Monday, Tuesday, Wednesday, Thursday, Friday
@@ -99,9 +99,10 @@ class Carpark {
    */
   calculate(start: string, end: string, mode: string = 'longterm'): number {
     let workVal = 0.0;
-    this._startDT = parse(start, 'DD/MM/YYYY HH:mm:ssZ');
-    this._endDT = parse(end, 'DD/MM/YYYY HH:mm:ssZ');
+    this._startDT = <Date>parse(start, 'DD/MM/YYYY HH:mm:ssZ');
+    this._endDT = <Date>parse(end, 'DD/MM/YYYY HH:mm:ssZ');
 
+    if (this._endDT.getTime() <= this._startDT.getTime()) return workVal;
     switch (mode.toLowerCase()) {
       case 'short':
       case 'shortterm':

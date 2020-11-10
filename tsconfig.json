@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "target": "ES2018",
     "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "sourceMap": true
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "outDir": "./dist"
   },
   "include": ["ts-lib/**/*"],
   "exclude": ["node_modules", "test/**/*.ts"]
